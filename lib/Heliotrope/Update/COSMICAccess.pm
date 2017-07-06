@@ -53,7 +53,7 @@ sub login {
   $log->info("Authenticating COSMIC credentials");
   my $request = GET 'https://cancer.sanger.ac.uk/cosmic/login';
   
-  $request->authorization_basic('jcook04\@uoguelph.ca', 'H34rth1ng');
+  $request->authorization_basic('', '');
 
 # Add a condition to kill program if authentication doesn't succeed
   my $response = $ua->request($request);
@@ -65,7 +65,7 @@ sub login {
 
   #$log->info("Logging in to COSMIC");
   #my $response = $ua->post('https://cancer.sanger.ac.uk/cosmic/login',
-  #  Content => {email => $config->{"jcook04\@uoguelph.ca"}, password => $config->{"H34rth1ng"}});
+  #  Content => {email => $config->{""}, password => $config->{""}});
      
 }
 sub get_cosmic_version_date {
