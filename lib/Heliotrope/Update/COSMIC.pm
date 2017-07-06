@@ -96,8 +96,8 @@ sub maybe_update {
     use Net::SFTP::Foreign;
     my $host = "sftp-cancer.sanger.ac.uk";
     my %args = (
-    "user"     => "jcook04\@uoguelph.ca",
-    "password" => "H34rth1ng",
+    "user"     => "",
+    "password" => "",
     "port"     => "22" ) ;
      
     my $sftp = Net::SFTP::Foreign->new($host, %args);
